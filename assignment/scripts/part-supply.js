@@ -81,3 +81,14 @@ while (total >= 7) {
     boxes++;
 }
 console.log(`${boxes} boxes filled with ${total} parts left over`);
+
+for(let i = 0; i < 15; i++) {
+    let pyramid = '';
+    for (let y = 15 - i; y > 0; y--) {
+        pyramid += ' ';
+    }
+    for (let z = 0; z <= (i*2); z++) {
+        pyramid += '*';
+    }
+    console.log(pyramid);
+}
